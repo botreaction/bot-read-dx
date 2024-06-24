@@ -1,1 +1,1 @@
-worker: node main.js
+worker: yarn install && node main.js
