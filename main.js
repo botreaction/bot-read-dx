@@ -45,7 +45,7 @@ const h = async (u, c) => {
 			setTimeout(() => {
 				c.readMessages([m.key])
 				let mt = getContentType(m.message)
-				console.log((/protocolMessage/i.test(mt)) ? `Telah menghapus Story nya : ${m.key.participant.split('@')[0]}` : 'Melihat story user : '+m.key.participant.split('@')[0]);
+				console.log((/protocolMessage/i.test(mt)) ? `Menghapus : ${m.key.participant.split('@')[0]}` : 'Melihat : '+m.key.participant.split('@')[0]);
 			}, cuy.faston);
 		}
 	} catch (e) {
